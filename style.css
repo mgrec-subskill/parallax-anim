@@ -60,8 +60,25 @@ body{
     z-index: 4;
 }
 
+
 .active-mtn{
     transform:translateY(35%) scale(1);
+    transition: transform 1.6s ease-in-out;
+}
+
+.img-mountain-reverse{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform:translateX(-6%) translateY(36%) scale(1.05) scaleX(-1.2);
+    transition: transform 1.6s ease-in-out;
+    filter: grayscale(30%);
+    z-index: 2;
+}
+
+
+.active-mtn-reverse{
+    transform:translateX(-6%) translateY(33%) scale(1) scaleX(-1.2);
     transition: transform 1.6s ease-in-out;
 }
 
